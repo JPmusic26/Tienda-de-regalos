@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encanto Tienda de Regalo</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <header>
+        <nav>
+            <img src="IMG/Encanto tienda de regalo.jpg" alt=""width="100px" height="100px">
+            <div style ="color:#e7e3e3; font-size:45pt; font-family:ArialBlack"  class="logo">Encanto Tienda de Regalos</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <div class="contenedor">
+            <h1 style ="color:#625e5e; font-size:55pt; font-family:ArialBlack">¡Bienvenidos a Encanto Tienda de Regalos!</h1><br>
+            <p style ="color:#625e5e; font-size:20pt; font-family:ArialBlack">Encuentra el regalo perfecto para cada ocasión.</p><br>
+            <a href="#productos" class="boton">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <h2 style="text-align: center;">Nuestros Productos</h2>
+    <section id="productos" class="flex-container">
+        
+            <div class="producto">
+                <img src="IMG/Caja Mikey.jpg" alt=""width="300" height="300px" alt="Regalo 5">
+                <h3>Caja Mikey </h3>
+                <p>$3.800</p>
+                <a href="#comprar" class="boton-comprar">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="IMG/Caja huevo kinder Peluche perrito.jpg " alt=""width="300" height="300px" alt="Regalo 6">
+                <h3>Caja huevo kinder
+                    Peluche perrito</h3>
+                <p>$6.000
+                   $8.500
+                </p>
+                <a href="#comprar" class="boton-comprar">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="IMG/Perfume millón hombre.jpg" alt=""width="300" height="300px" alt="Regalo 7">
+                <h3>Perfume millón hombre</h3>
+                <p>$15.000</p>
+                <a href="#comprar" class="boton-comprar">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="IMG/caja para billetera o accesorios.jpg" alt=""width="300" height="300px" alt="Regalo 8">
+                <h3>Caja para billetera o accesorios</h3>
+                <p>$3.000</p>
+                <a href="#comprar" class="boton-comprar">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <img src="IMG/Caja lazo morado y Caja rosada ventana pequeña.jpg" alt=""width="300" height="300px" alt="Regalo 9">
+                <h3>Caja lazo morado
+                    Caja rosada ventana pequeña</h3>
+                <p>$3.000
+                   $4.000
+                </p>
+                <a href="#comprar" class="boton-comprar">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de pago -->
+    <section id="comprar">
+        <h2>Métodos de Pago</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required>
+
+            <button type="submit" class="boton">Pagar</button>
+        </form>
+    </section>
+
+    <nav>
+        <div class="logo">Encanto Tienda de Regalo</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            
+            <!-- Sección de Nosotros con menú desplegable controlado por JavaScript -->
+            <li class="dropdown" id="nosotrosMenu">
+                <a href="#nosotros" onclick="toggleDropdown(event)">Nosotros</a>
+                <ul class="dropdown-content" id="dropdownContent">
+                    <li><a href="#mision">Misión</a></li>
+                    <li><a href="#vision">Visión</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                </ul>
+            </li>
+    
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Secciones adicionales para el contenido de la pestaña "Nosotros" -->
+    <section id="mision">
+        <h2>Nuestra Misión</h2>
+        <p>Ofrecer regalos que encantan y sorprenden a cada persona en sus momentos especiales.</p>
+    </section>
+    
+    <section id="vision">
+        <h2>Nuestra Visión</h2>
+        <p>Ser la tienda de regalos preferida, brindando experiencias únicas y memorables.</p>
+    </section>
+    
+    <section id="valores">
+        <h2>Nuestros Valores</h2>
+        <p>Compromiso, creatividad y calidad en cada uno de nuestros productos.</p>
+    </section>
+
+
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Correo: EncantoTienddeRegalo@gmail.com</p>
+        <p>Teléfono: +57 300 884 0211</p>
+    </section>
+
+    
+    <!-- Asistente virtual -->
+    <div id="asistente-virtual">
+        <div class="chat-boton">💬</div>
+        <div class="chat-box">
+            <div class="mensaje">Hola, ¿En qué puedo ayudarte hoy?</div>
+            <input type="text" placeholder="Escribe tu mensaje...">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Encanto Tienda de Regalo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            var dropdownContent = document.getElementById("dropdownContent");
+            
+            // Alterna la visibilidad del submenú
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+        </script>
+        
+</body>
+</html>

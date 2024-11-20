@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #6A1B9A;
+    padding: 20px;
+}
+
+/* Estilo básico para la barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo del menú desplegable oculto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6A1B9A;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #AB47BC;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#inicio {
+    background-image: url('fondo-tienda.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.boton {
+    padding: 10px 20px;
+    background-color: #7B1FA2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #AB47BC;
+}
+
+#productos .productos-contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+}
+
+.boton-comprar {
+    margin-top: 10px;
+}
+
+#asistente-virtual {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-boton {
+    background-color: #7B1FA2;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.chat-box {
+    display: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+}
+
+.chat-boton:hover + .chat-box,
+.chat-box:hover {
+    display: block;
+}
+
+footer {
+    background-color: #6A1B9A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.flex-container{
+    border: 1px solid black;
+    display: flexbox;
+    background: #f8f6f6;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto ;
+
+}
